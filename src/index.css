@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
-  --primary: #bc4123;
-  --secondary: #2b3452;
+  --primary: #727fe2;
+  --secondary: #e1e6f6;
 }
 body {
   margin: 0;
@@ -11,7 +11,7 @@ body {
   background: var(--secondary);
 }
 * {
-  color: #fff;
+  color: #0a0a0a;
   margin: 0;
 }
 p {
@@ -45,6 +45,7 @@ header nav a{
 }
 header nav a.active {
   background: var(--primary);
+  color: white;
 }
 
 /* page content */
@@ -70,6 +71,7 @@ main {
 }
 .help-layout nav a.active {
   background: var(--primary);
+  color: white;
 }
 
 /* faq */
@@ -99,9 +101,49 @@ form label span {
   margin-bottom: 10px;
 }
 
-/* careers list */
 
+/* careers list */
+.careers > a {
+  display: block;
+  background: rgba(166, 177, 205, 0.2);
+  padding: 20px;
+  border-radius: 4px;
+  margin: 20px 0;
+  text-decoration: none;
+}
+.careers > a:hover p {
+  color: var(--primary);
+}
+.careers p {
+  margin: 0;
+}
+.careers > a p:last-child {
+ font-size: 0.8em;
+ /* color: #bbb; */
+}
 
 /* careers details */
-
-
+.career-details {
+  background: rgba(166, 177, 205, 0.2);
+  padding: 20px;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+.breadcrumbs {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+.breadcrumbs > *{
+  display: inline-block;
+  margin-right: 10px;
+}
+.breadcrumbs .crumb:after {
+  content: '>';
+  margin-left: 10px;
+}
+.breadcrumbs .crumb:last-child:after {
+  display: none;
+}
+.breadcrumbs .crumb a {
+  /* color: #ddd; */
+}
